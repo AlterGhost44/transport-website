@@ -1,7 +1,3 @@
-:root {
-    --header-h: 64px;
-  }
-
 body {
     min-height: 100vh;
     display: grid;
@@ -15,7 +11,7 @@ body {
 
 .logo img {
     display: block;
-    height: 48px;
+    height: 60px;
     width: auto;
   }
 
@@ -28,6 +24,8 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    position: relative;
+    z-index: 1100;
   }
   
   .burger span {
@@ -61,6 +59,7 @@ body {
     gap: 2rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    z-index: 1000;
   }
   
   .mobile-menu.active {
@@ -71,4 +70,68 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+
+  section {
+    padding: 1rem 0;
+  }
+
+  .footer {
+    padding-top: 1rem;
+    background: rgba(20, 20, 20, 0.95);
+  }
+
+  .footer-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem 1.5rem;
+    gap: 10px;
+  }
+
+  .footer-col h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-col a {
+    color: #aaa;
+    text-decoration: none;
+  }
+
+  .footer-col p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+  }
+
+  .footer-col a:hover {
+    color:#00e1ff
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-col li {
+    margin: 0.4rem 0;
+  }
+
+  .footer-notice {
+    justify-items: center;
+    padding: 1rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .footer-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

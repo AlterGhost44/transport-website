@@ -1,0 +1,21 @@
+.cta-menu {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0rem;
+    color: white;
+    font-weight: 800;
+    transition: background-color 0.25 ease;
+}
+
+.cta-menu:active {
+    background-color: white;
+    color: black;
+}
+
+a.cta, a.cta-menu {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    outline: none;
+}
