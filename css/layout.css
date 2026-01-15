@@ -7,6 +7,7 @@ body {
 
 .header {
     max-width: 100%;
+    box-shadow: 0 2px 20px rgba(24, 24, 24, 0.95);
 }
 
 .logo img {
@@ -79,12 +80,8 @@ body {
     padding: 0 0.5rem;
   }
 
-  section {
-    padding: 1rem 0;
-  }
-
   .footer {
-    padding-top: 1rem;
+    padding-bottom: 1rem;
     background: rgba(20, 20, 20, 0.95);
   }
 

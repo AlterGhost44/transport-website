@@ -22,13 +22,28 @@
 }
 
 .home-descrip {
-    grid-template-columns: auto;
-    padding: 1rem 2rem;
-    gap: 10px;
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.781);
+    gap: 30px;
 }
 
-.home-descrip p {
-    padding-bottom: 1rem;
+.hero-descrip {
+    padding: 1rem 0;
+
+}
+.hero-descrip a {
+    padding: 1rem;
+
+}
+
+.hero-descrip p {
     font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.hero-descrip ul {
+    font-size: 1.1rem;
 }

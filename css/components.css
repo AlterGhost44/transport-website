@@ -8,9 +8,18 @@
     transition: background-color 0.25 ease;
 }
 
-.cta-menu:active {
+.cta-menu:active, .cta:active {
     background-color: white;
     color: black;
+}
+
+.cta {
+    padding: 1rem;
+    background: rgba(41, 41, 41, 0.5);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 5px;
 }
 
 a.cta, a.cta-menu {
