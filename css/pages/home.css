@@ -1,14 +1,3 @@
-.home-welcome img {
-    width: 100%;
-    display: block;
-}
-
-.home-welcome {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
 .home-title {
     position: absolute;
     bottom: 0;
@@ -24,19 +13,12 @@
 .home-descrip {
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
     padding: 1.5rem;
     background: rgba(0, 0, 0, 0.781);
     gap: 30px;
 }
-
-.hero-descrip {
-    padding: 1rem 0;
-
-}
 .hero-descrip a {
     padding: 1rem;
-
 }
 
 .hero-descrip p {

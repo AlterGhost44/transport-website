@@ -8,12 +8,29 @@ body {
 .header {
     max-width: 100%;
     box-shadow: 0 2px 20px rgba(24, 24, 24, 0.95);
+    padding: 0.5rem 0;
 }
 
 .logo img {
     display: block;
     height: 60px;
     width: auto;
+  }
+
+  .article-spacing--sm {padding: 1rem 0;}
+  .article-spacing--md {padding: 2rem 0;}
+
+  .media-box {
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .media-box img {
+    display: block;
+    width: 100%;
   }
 
   .burger {
