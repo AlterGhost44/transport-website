@@ -1,0 +1,15 @@
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    padding: 1.5rem;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+.contact-info ul li{
+   padding: 0.5rem;
+}

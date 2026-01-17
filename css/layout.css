@@ -9,6 +9,7 @@ body {
     max-width: 100%;
     box-shadow: 0 2px 20px rgba(24, 24, 24, 0.95);
     padding: 0.5rem 0;
+    padding-right: 1rem;
 }
 
 .logo img {
@@ -32,6 +33,11 @@ body {
     display: block;
     width: 100%;
   }
+
+  .media-box p {
+    font-size: 1rem;
+  }
+
 
   .burger {
     width: 32px;

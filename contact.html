@@ -29,25 +29,37 @@
             </nav>
         </div>
     </header>
-    <article>
-        <div>
+    <article class="hero-contact article-spacing--md">
+        <div class="contact-info">
             <h1>Kontakt</h1>
             <p>Zapraszamy do kontaktu w celu uzyskania indywidualnej wyceny i szczegółów oferty. Obsługujemy zapytania telefoniczne, mailowe oraz poprzez formularz online, zapewniając szybką odpowiedź w ciągu 24 godzin.</p>
-            <ul>Godziny pracy: Poniedziałek-piątek 7:00-19:00, sobota 8:00-14:00.
-                <li>Telefon: +48 123 456 789 (poniedziałek-piątek: 8:00-18:00).</li>
-                <li>Email: biuro@gline-logistics.pl</li>
+            <h2>Informacje:</h2>
+            <ul>
+                <li>Godziny pracy: Poniedziałek-piątek <strong>7:00-19:00, sobota 8:00-14:00.</strong></li>
+                <li>Telefon: <strong>+48 123 456 789 (poniedziałek-piątek: 8:00-18:00).</strong></li>
+                <li>Email: <strong>biuro@gline-logistics.pl</strong></li>
                 <li>Adres: ul. Transportowa 123, 00-001 Warszawa, Polska</li>
             </ul>
-            <p>Formularz kontaktowy</p>
-            <form>
-                <input type="text" placeholder="Imię i nazwisko/Firma">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Telefon">
-                <textarea placeholder="Wiadomość"></textarea>
-                <button type="submit">Wyślij</button>
-            </form>
+            <h2>Formularz kontaktowy</h2>
+            <a href="#send_form" class="cta">Formularz</a>
         </div>
     </article>
+    <div id="send_form" class="form-window">
+        <form class="form-box">
+            <label>Imię i Nazwisko lub Firma</label>
+            <input type="text" placeholder="Imię i nazwisko/Firma">
+
+            <label>E-mail</label>
+            <input type="email" placeholder="Email">
+
+            <label>Numer kontaktowy</label>
+            <input type="text" placeholder="Telefon">
+
+            <label>Wiadomość</label>
+            <textarea placeholder="Wiadomość"></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
     <footer class="footer">
         <div class="footer-col">
             <div class="footer-info">

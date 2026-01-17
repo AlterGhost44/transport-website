@@ -7,22 +7,18 @@
     justify-items: center;
 }
 
-.hero-about-items h1 {
-    font-size: 2.5rem;
-}
 .hero-about-items p {
-    font-weight: 600;
     text-align: center;
 }
 
 .hero-about-items li {
-    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 1rem 0;
     text-align: center;
+    font-weight: bold;
 }
 
 .hero-about-items li img {
@@ -33,20 +29,3 @@
 .list-icon {
     list-style: none;
 }
-
-/*.list-icon li {
-    position: relative;
-    padding-left: 1.8rem;
-}
-
-.list-icon li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.45rem;
-    width: 2rem;
-    height: 2rem;
-    background-image: var(--icon);
-    background-repeat: no-repeat;
-    background-size: contain;  
-}*/
