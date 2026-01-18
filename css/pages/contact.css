@@ -13,3 +13,45 @@
 .contact-info ul li{
    padding: 0.5rem;
 }
+
+.form_isHidden {
+    display: none;
+}
+
+.form_isActive {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+    background: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+}
+
+.form-box {
+    background: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+    width: 95%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    min-height: 44px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.close_btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.5rem;
+    line-height: 1;
+}

@@ -1,0 +1,7 @@
+.privacy-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2rem;
+    gap: 20px;
+}

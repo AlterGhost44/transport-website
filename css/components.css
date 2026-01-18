@@ -1,5 +1,5 @@
 .cta-menu {
-    display: block;
+    display: inline-block;
     text-align: center;
     width: 100%;
     padding: 1.5rem 0rem;
@@ -14,17 +14,32 @@
 }
 
 .cta {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-weight: 800;
+    color: white;
     padding: 1rem;
     background: rgba(41, 41, 41, 0.5);
     font-weight: 700;
     font-size: 1.3rem;
     text-align: center;
     border-radius: 5px;
+    border: 2px solid rgb(78, 78, 78)
 }
 
-a.cta, a.cta-menu {
+a, button {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    font: inherit;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     color: inherit;
     outline: none;
+}
+
+@media (min-width: 768px) {
+    .cta:hover, .cta-menu:hover {
+        transform: scale(0.97);
+    }
 }
