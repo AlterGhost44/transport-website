@@ -1,0 +1,45 @@
+.cta-menu {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0rem;
+    color: white;
+    font-weight: 800;
+    transition: background-color 0.25 ease;
+
+}
+
+.cta-menu:active, .cta:active {
+    background-color: white;
+    color: black;
+}
+
+.cta {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-weight: 800;
+    color: white;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+a, button {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    font: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .cta:hover, .cta-menu:hover {
+        transform: scale(0.95);
+        box-shadow: inset 0 0 40px rgba(252, 252, 252, 0.658);
+        border: 1px solid rgba(255, 255, 255, 0.76);
+    }
+}

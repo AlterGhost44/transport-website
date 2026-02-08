@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G-Line Logistics | Transport Międzynarodowy i Logistyka</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/primary.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="icon" type="image/png" href="assets/icon/fav.ico">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header glassmorph-bars">
         <div class="nav">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="G-Line Logistics">
+                <img src="assets/images/logo.avif" alt="G-Line Logistics firma transportowa pokazująca flotę i zakłady usług">
             </div>
 
             <button class="burger" aria-label="Menu">
@@ -36,44 +37,42 @@
             </nav>
         </div>
     </header>
-    <article class="hero-contact article-spacing--md">
-        <div class="contact-info article-bk">
+    <article class="hero-contact glassmorph-art article-spacing--md">
+        <div class="contact-info">
             <h1>Kontakt</h1>
             <p>Zapraszamy do kontaktu w celu uzyskania indywidualnej wyceny i szczegółów oferty. Obsługujemy zapytania telefoniczne, mailowe oraz poprzez formularz online, zapewniając szybką odpowiedź w ciągu 24 godzin.</p>
             <h2>Informacje:</h2>
             <ul>
-                <li>Godziny pracy: Poniedziałek-piątek <strong>7:00-19:00, sobota 8:00-14:00.</strong></li>
-                <li>Telefon: <strong>+48 123 456 789 (poniedziałek-piątek: 8:00-18:00).</strong></li>
+                <li>Godziny pracy: Poniedziałek-piątek <strong>7:00-19:00</strong>, sobota <strong>8:00-14:00</strong>.</li>
+                <li>Telefon: <strong>+48 123 456 789</strong> (poniedziałek-piątek: <strong>8:00-18:00</strong>).</li>
                 <li>Email: <strong>biuro@gline-logistics.pl</strong></li>
                 <li>Adres: ul. Transportowa 123, 00-001 Warszawa, Polska</li>
             </ul>
             <h2>Formularz kontaktowy</h2>
-            <button id="openForm" class="cta">Napisz do nas!</button>
+            <button id="openForm" class="cta glassmorph-cta">Napisz do nas!</button>
         </div>
     </article>
     <div id="form-section" class="form_isHidden">
-        <form class="form-box" action="https://formspree.io/f/xpqqplbw"
-        method="POST">
-            <button id="closeForm" type="button" class="close_btn" aria-label="Zamknij formularz">x</button>
-            <h1>Formularz kontaktowy</h1>
-            <label>Imię i Nazwisko lub Firma</label>
-            <input type="text" placeholder="Imię i nazwisko/Firma">
+        <button id="closeForm"" class="close_btn">X</button>
+        <form name="contact" class="glassmorph-art form_layout" method="POST" netlify action="thank-you.html">
+            <input type="hidden" name="form-name" value="contact">
 
-            <label>E-mail</label>
-            <input type="email" required placeholder="Email">
+                <label for="name">Imię i nazwisko / Firma:</label>
+                <input type="text" name="name" id="name" placeholder="Imię i nazwisko / Firma" autocomplete="given-name">
 
-            <label>Numer kontaktowy</label>
-            <input type="text" placeholder="Telefon">
+                <label for="email" required autocom>Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email">
 
-            <label>Wiadomość</label>
-            <textarea placeholder="Wiadomość"></textarea>
-            <button type="submit" class="cta">Wyślij</button>
+                <label for="message">Wiadomość:</label>
+                <textarea class="form_layout_textarea" name="message" id="message" placeholder="Wiadomość" autocomplete=""></textarea>
+            
+                <button class="cta glassmorph-cta" type="submit">Wyślij</button>   
         </form>
     </div>
-    <footer class="footer">
+    <footer class="footer glassmorph-bars">
         <div class="footer-col">
             <div class="footer-info">
-                <h4>G-Line Logistics</h4>
+                <h3>G-Line Logistics</h3>
                <p>ul. Transportowa 123, 00-001 Warszawa, Polska</p>
                 <p>NIP: 123-456-78-90 | REGON: 123456789 | KRS: 0000123456</p>
                 <p>Telefon: +48 22 123 45 67 | Email: biuro@gline-logistics.pl</p>
@@ -91,14 +90,6 @@
                 </ul>
     
             </div>
-            <div class="footer-social">
-                <h4>Śledź Nas</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div> 
         </div> 
         <div class="footer-notice">
             <p>© 2026 G-Line Logistics. Wszelkie prawa zastrzeżone. Realizujemy przewozy zwykłe, ponadgabarytowe ADR i delikatne towary w Polsce i Europie.</p>
