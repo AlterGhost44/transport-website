@@ -53,18 +53,18 @@
         </div>
     </article>
     <div id="form-section" class="form_isHidden">
-        <button id="closeForm"" class="close_btn">X</button>
-        <form name="contact" class="glassmorph-art form_layout" method="POST" netlify action="thank-you.html">
+        <button id="closeForm" class="close_btn">X</button>
+        <form name="contact" class="glassmorph-art form_layout" method="POST" data-netlify="true" action="/thank-you.html">
             <input type="hidden" name="form-name" value="contact">
 
                 <label for="name">Imię i nazwisko / Firma:</label>
                 <input type="text" name="name" id="name" placeholder="Imię i nazwisko / Firma" autocomplete="given-name">
 
-                <label for="email" required autocom>Email:</label>
+                <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email">
 
                 <label for="message">Wiadomość:</label>
-                <textarea class="form_layout_textarea" name="message" id="message" placeholder="Wiadomość" autocomplete=""></textarea>
+                <textarea class="form_layout_textarea" name="message" id="message" placeholder="Wiadomość" autocomplete="off"></textarea>
             
                 <button class="cta glassmorph-cta" type="submit">Wyślij</button>   
         </form>
