@@ -1,4 +1,7 @@
-@use "layout";
+// Główny plik SCSS – kompiluj do css/primary.css
+// np. sass scss/primary.scss css/primary.css --no-source-map
+
 @use "base";
+@use "layout";
 @use "components";
 @use "visuals";

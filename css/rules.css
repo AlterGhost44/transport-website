@@ -1,7 +1,33 @@
+/* Regulamin – spójne z primary, mobile first */
+
 .terms-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 20px;
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-md);
+  max-width: 100%;
+}
+
+.terms-layout {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.terms-layout h1,
+.terms-layout h2 {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.terms-layout p,
+.terms-layout li {
+  margin-bottom: var(--space-sm);
+}
+
+@media (min-width: 1024px) {
+  .terms-layout {
+    padding: var(--space-xl) var(--space-lg);
+    gap: var(--space-xl);
+  }
 }

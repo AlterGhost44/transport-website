@@ -1,27 +1,86 @@
+/* Oferta – mobile first, spójne z primary */
+
 .offer-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg) var(--space-sm);
+}
+
+.offer-lead {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto;
+  font-weight: 600;
+  color: var(--color-text-soft);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+.offer-cta-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.offers-link {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  width: 100%;
 }
 
 .offer-box-decript {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
-@media (min-width: 1024px) {
-    .offers-link {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 24px
-    }
 
-    .offer-size {
-        max-width: 400px;
-    }
+.offer-box-decript p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.offer-card .offer-box-decript .cta-card {
+  align-self: flex-start;
+}
+
+.offer-cta-bottom {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-align: center;
+  width: 100%;
+}
+
+.offer-cta-bottom .lead-cta-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .offer-layout {
+    padding: var(--space-xl) var(--space-lg);
+    gap: var(--space-xl);
+  }
+
+  .offers-link {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .offer-cta-bottom {
+    margin-top: var(--space-md);
+    padding-top: var(--space-lg);
+  }
 }

@@ -1,21 +1,38 @@
+/* Thank you – spójne z primary, mobile first */
+
 .thank-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(7, 7, 7, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  padding: var(--space-md);
 }
 
 .thank-content {
-    display: flex;
-    max-width: 90vw;
-    max-height: 60vh;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    padding: 2rem;
-    gap: 1rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+  padding: var(--space-lg);
+  gap: var(--space-sm);
+  text-align: center;
 }
 
+.thank-content h1,
+.thank-content p {
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .thank-layout {
+    min-height: 70vh;
+  }
+
+  .thank-content {
+    max-width: 36rem;
+    padding: var(--space-xl);
+    gap: var(--space-md);
+  }
+}

@@ -1,7 +1,33 @@
+/* Polityka prywatności – spójne z primary, mobile first */
+
 .privacy-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 2rem;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-md);
+  max-width: 100%;
+}
+
+.privacy-layout {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.privacy-layout h1,
+.privacy-layout h2 {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.privacy-layout p,
+.privacy-layout li {
+  margin-bottom: var(--space-sm);
+}
+
+@media (min-width: 1024px) {
+  .privacy-layout {
+    padding: var(--space-xl) var(--space-lg);
+    gap: var(--space-xl);
+  }
 }

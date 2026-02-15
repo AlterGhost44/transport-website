@@ -3,61 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G-Line Logistics | Kontakt</title>
+    <meta name="description" content="Skontaktuj się z G-Line Logistics – wycena transportu w 24h. Telefon, e-mail, formularz. Biuro Warszawa. Transport Polska i Europa.">
+    <meta name="theme-color" content="#111111">
+    <link rel="canonical" href="https://gline-logistics.pl/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="G-Line Logistics | Kontakt – Wycena Transportu">
+    <meta property="og:description" content="Wycena transportu w 24h. Telefon, e-mail, formularz. Biuro Warszawa. Transport Polska i Europa.">
+    <meta property="og:url" content="https://gline-logistics.pl/contact.html">
+    <meta property="og:locale" content="pl_PL">
+    <title>G-Line Logistics | Kontakt – Wycena Transportu, Biuro Warszawa</title>
     <link rel="stylesheet" href="css/primary.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="icon" type="image/png" href="assets/icon/fav.ico">
+    <link rel="icon" href="assets/icon/fav.ico" sizes="any">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Przejdź do treści</a>
     <header class="header glassmorph-bars">
         <div class="nav">
-            <div class="logo">
-                <img src="assets/images/logo.avif" alt="G-Line Logistics firma transportowa pokazująca flotę i zakłady usług">
-            </div>
+            <a class="logo" href="index.html" aria-label="G-Line Logistics – strona główna">
+                <img src="assets/images/logo.avif" width="180" height="60" alt="G-Line Logistics – firma transportowa" loading="eager">
+            </a>
 
-            <button class="burger" aria-label="Menu">
+            <button class="burger" type="button" aria-label="Otwórz menu nawigacji" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
               </button>
 
-            <nav class="mobile-menu">
+            <nav class="mobile-menu" aria-label="Menu główne">
                 <a class="cta-menu" href="index.html">Strona główna</a>
                 <a class="cta-menu" href="offer.html">Oferta</a>
                 <a class="cta-menu" href="about.html">O nas</a>
                 <a class="cta-menu" href="contact.html">Kontakt</a>
+                <a class="cta cta-primary" href="#form-section" id="navOpenForm">Wycena w 24h</a>
             </nav>
 
-            <nav class="desktop-menu">
+            <nav class="desktop-menu" aria-label="Menu główne">
                 <a class="cta-menu" href="index.html">Strona główna</a>
                 <a class="cta-menu" href="offer.html">Oferta</a>
                 <a class="cta-menu" href="about.html">O nas</a>
                 <a class="cta-menu" href="contact.html">Kontakt</a>
+                <a class="cta cta-primary" href="#form-section" id="navOpenFormDesktop">Wycena w 24h</a>
             </nav>
         </div>
     </header>
+    <main id="main-content">
     <article class="hero-contact glassmorph-art article-spacing--md">
         <div class="contact-info">
             <h1>Kontakt</h1>
-            <p>Zapraszamy do kontaktu w celu uzyskania indywidualnej wyceny i szczegółów oferty. Obsługujemy zapytania telefoniczne, mailowe oraz poprzez formularz online, zapewniając szybką odpowiedź w ciągu 24 godzin.</p>
-            <h2>Informacje:</h2>
+            <p>Potrzebujesz wyceny transportu lub chcesz omówić szczegóły zlecenia? Nasz zespół odpowiada na zapytania w ciągu <strong>24 godzin</strong> – telefonicznie, mailowo lub przez formularz. Zapraszamy do współpracy firmy z Polski i Europy.</p>
+            <h2>Dane kontaktowe</h2>
             <ul>
-                <li>Godziny pracy: Poniedziałek-piątek <strong>7:00-19:00</strong>, sobota <strong>8:00-14:00</strong>.</li>
-                <li>Telefon: <strong>+48 123 456 789</strong> (poniedziałek-piątek: <strong>8:00-18:00</strong>).</li>
-                <li>Email: <strong>biuro@gline-logistics.pl</strong></li>
-                <li>Adres: ul. Transportowa 123, 00-001 Warszawa, Polska</li>
+                <li><strong>Godziny pracy biura:</strong> pon.–pt. 7:00–19:00, sob. 8:00–14:00</li>
+                <li><strong>Telefon:</strong> <a href="tel:+48221234567">+48 22 123 45 67</a> (pon.–pt. 8:00–18:00)</li>
+                <li><strong>E-mail:</strong> <a href="mailto:biuro@gline-logistics.pl">biuro@gline-logistics.pl</a></li>
+                <li><strong>Adres:</strong> ul. Transportowa 123, 00-001 Warszawa, Polska</li>
             </ul>
-            <h2>Formularz kontaktowy</h2>
-            <button id="openForm" class="cta glassmorph-cta">Napisz do nas!</button>
+            <h2>Wyślij zapytanie</h2>
+            <p>Opisz ładunek, trasę i termin – przygotujemy dla Ciebie indywidualną wycenę. Odpowiadamy w ciągu <strong>24 godzin</strong>.</p>
+            <div class="contact-cta-wrap">
+                <button id="openForm" class="cta cta-primary" type="button">Wypełnij formularz — wycena w 24h</button>
+                <a class="cta cta-secondary glassmorph-cta" href="tel:+48221234567">Zadzwoń: +48 22 123 45 67</a>
+            </div>
         </div>
     </article>
-    <div id="form-section" class="form_isHidden">
-        <button id="closeForm" class="close_btn">X</button>
-        <form name="contact" class="glassmorph-art form_layout" method="POST" data-netlify="true">
+    </main>
+    <div id="form-section" class="form_isHidden" role="dialog" aria-modal="true" aria-labelledby="form-title" aria-hidden="true">
+        <button id="closeForm" class="close_btn" type="button" aria-label="Zamknij formularz">×</button>
+        <form name="contact" class="glassmorph-art form_layout" method="POST" data-netlify="true" id="contact-form">
             <input type="hidden" name="form-name" value="contact">
 
-                <label for="name">Imię i nazwisko / Firma:</label>
+                <h2 id="form-title" class="visually-hidden">Formularz zapytania o wycenę transportu</h2>
+                <label for="name">Imię i nazwisko / Firma</label>
                 <input type="text" name="name" id="name" placeholder="Imię i nazwisko / Firma" autocomplete="given-name">
 
                 <label for="email">Email:</label>
@@ -69,7 +87,11 @@
                 <button class="cta glassmorph-cta" type="submit">Wyślij</button>   
         </form>
     </div>
-    <footer class="footer glassmorph-bars">
+    <footer class="footer glassmorph-bars" role="contentinfo">
+        <div class="footer-cta-bar">
+            <p>Wycena w 24h — opisz ładunek i trasę, przygotujemy ofertę.</p>
+            <button type="button" class="cta cta-primary" id="footerOpenForm">Wypełnij formularz</button>
+        </div>
         <div class="footer-col">
             <div class="footer-info">
                 <h3>G-Line Logistics</h3>

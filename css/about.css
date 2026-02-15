@@ -1,30 +1,72 @@
+/* O nas – mobile first, spójne z primary */
+
 .hero-about-items {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 1.2rem 1rem;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  padding: var(--space-md) var(--space-sm);
+  justify-items: center;
+  max-width: 100%;
+}
+
+.hero-about-items h1 {
+  text-align: center;
 }
 
 .hero-about-items p {
-    text-align: center;
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
-.hero-about-items li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem 0;
-    text-align: center;
-    font-weight: bold;
-}
-
-.hero-about-items li img {
-    width: 100px;
-    height: auto;
+.hero-about-items h2 {
+  text-align: center;
 }
 
 .list-icon {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 36rem;
+}
+
+.hero-about-items .list-icon li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+}
+
+.hero-about-items .list-icon li img {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.hero-about-items .lead-cta-block {
+  width: 100%;
+  max-width: 36rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-about-items {
+    padding: var(--space-xl) var(--space-lg);
+    gap: 2.5rem;
+  }
+
+  .hero-about-items .list-icon li {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .hero-about-items .list-icon li img {
+    width: 64px;
+  }
 }

@@ -1,0 +1,29 @@
+// Ujednolicone zmienne – spójne z css/primary.css
+
+$color-bg: rgb(17, 17, 17);
+$color-text: #fff;
+$color-text-muted: #aaa;
+$color-text-soft: rgba(255, 255, 255, 0.9);
+$color-accent: #00e1ff;
+$color-cta-start: #00c6ff;
+$color-cta-end: #0072ff;
+$color-border: rgba(42, 42, 42, 0.5);
+$color-overlay: rgba(0, 0, 0, 0.95);
+$color-glass: rgba(0, 0, 0, 0.921);
+$color-glass-bars: rgba(0, 0, 0, 0.634);
+$color-footer-bg: rgba(0, 0, 0, 0.515);
+
+$breakpoint-desktop: 1024px;
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 20px;
+
+$font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-heading: "Inter-Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
